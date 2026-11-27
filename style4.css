@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, black, darkgreen);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    background: darkslategray;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px darkgreen;
+}
+
+h1 {
+    color: lime;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: lightgray;
+    margin: 8px 0 20px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    background: darkslategray;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.score-board span {
+    color: lightgray;
+    font-size: 12px;
+}
+
+.score-board h2 {
+    color: lime;
+    margin-top: 5px;
+}
+
+canvas {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    background: black;
+    border: 3px solid lime;
+    border-radius: 10px;
+    box-shadow: 0 0 15px green;
+}
+
+#message {
+    color: lime;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: lime;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: green;
+    color: white;
+    transform: scale(1.05);
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.controls div {
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    width: 50px;
+    height: 42px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.instruction {
+    color: lightgray;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media (max-width: 450px) {
+    .game-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
